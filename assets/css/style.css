@@ -135,7 +135,6 @@ h3{
     font-size: var(--h1-font-size);
     margin-left: var(--m-0-75);
     margin-bottom: var(--m-2-5);
-    color: var(--color-primary)
 }
 .padd-15{
     padding-left: 15px;
@@ -189,7 +188,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: 3rem;
+    color:3rem;
 }
 .nav-logo{
     font-size: var(--h2-font-size);
@@ -355,7 +354,7 @@ h3{
     display: inline;
     color: var(--color-primary);
     font-weight: var(--font-semi-bold);
-    box-shadow: 1px 2px 3px  red, 0px 5px 5px darkblue;
+    text-shadow: .1px 1px 1px black;
 }
 .home .intro img{
     margin-bottom: var(--m-1);
@@ -594,6 +593,11 @@ h3{
 }
 .timeline:hover{
     transform: scale(1.003);
+}
+.timeline h2{
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    text-align: center;
 }
 .timeline .timeline-item{
     position: relative;

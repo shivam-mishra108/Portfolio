@@ -735,7 +735,7 @@ opacity: 0.9;
     transition: .3s;
 }
 .project-item h3{
-    color: #fff;
+    color: var(--color-primary);
     font-size: 1.25rem;
     margin: 0 0 0 0.98rem;
     padding: 0 1 0.25rem;

@@ -469,6 +469,11 @@ h3{
     flex: 0 0 25%;
     max-width: 25%;
 }
+.about-img img{
+    border-radius: 3px;
+    aspect-ratio: 3/2;
+    filter: drop-shadow(1px 2px 3px var(--color-primary));
+}
 .about-content{
     flex: 0 0 75%;
     max-width: 75%;

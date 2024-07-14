@@ -465,15 +465,6 @@ h3{
 }
 
 /* =================----------About-----------=================== */
-.about-img{
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-.about-img img{
-    border-radius: 3px;
-    aspect-ratio: 3/2;
-    filter: drop-shadow(1px 2px 3px var(--color-primary));
-}
 .about-content{
     flex: 0 0 75%;
     max-width: 75%;
@@ -556,6 +547,24 @@ h3{
     border: 32px;
     width: 180px;
     border-radius: 50%;
+}
+
+.badge{
+    display: inline-block;
+    position: absolute;
+    left: -2rem;
+    top: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    transform: rotate(-90deg);
+    padding: 0.4rem 0.75rem;
+    font-size: var(--small-font-size);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 0;
 }
 .service-item h3{
     margin-bottom: var(--m-0-5);
@@ -737,6 +746,7 @@ opacity: 0.9;
     display: inline-block;
     padding: 0.19rem 0.625rem;
     transform: translateY(-40px);
+    
     transition: .3s;
 }
 .project-item h3{
@@ -796,72 +806,6 @@ opacity: 0.9;
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
-
-/* ====================pricing================ */
-.prices{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-}
-.prices:nth-child(odd){
-    margin-top: 1.5rem;
-}
-.prices:nth-child(1){
-    padding-left: 15px;
-}
-.prices:nth-child(3){
-    padding-right: 15px;
-}
-.price-item{
-    padding: var(--card-padding);
-    background-color: var(--color-white);
-    text-align: center;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-.price-item h3.plan{
-    margin: var(--m-0-75);
-}
-.price-item p{
-    margin-bottom: 1rem;
-}
-.price-item .price{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-}
-.price-item .price em{
-    font-style: normal;
-    font-size: x-small;
-    margin-right: var(--m-0-5);
-    vertical-align: super;
-}
-.price-item .price span{
-    font-size: var(--normal-font-size);
-    margin-left: var(--m-0-75);
-}
-.price-item .btn{
-    margin-top: var(--m-1);
-}
-.price-item.best{
-    padding: 3.25rem 2.5rem;
-    z-index: 1;
-    position: relative;
-}
-.price-item .badge{
-    position: absolute;
-    left: 0;
-    top: 2.6rem;
-    color: #fff;
-    background-color: var(--color-primary);
-    transform: rotate(-90deg);
-    padding: 0.4rem 0.75rem;
-    font-size: var(--small-font-size);
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-
 
 /* =============================Achievements========================= */
 .achievement{
@@ -1231,39 +1175,6 @@ footer .copyright .pro-links i{
     font-size: 1.4rem;
  }
 
-
- /* =======================Plans=================== */
- .plan{
-    margin: 1.2rem;
-    padding: 1.4rem;
-    border-bottom: .7px solid var(--color-primary) ;
- }
- .policy{
-    margin: .7rem;
-    padding: 1rem;
-    border-bottom: .7px solid var(--color-primary) ;
- }
- .plan h1
- {
-    margin:1.2rem;
- }
- .plan h2{
-    margin-top: .3rem;
- }
- .plan ul{
-    list-style-type: circle;
-    font-size: var(--normal-font-size);
- }
- .plan ul a{
-    text-decoration: underline darkblue;
- }
- .plan button{
-    margin-bottom: 1.3rem;
- }
- .plan i{
-    display: block;
- }
-
   /* =====.....-------====Customize Theme====-------......==== */
 .customize-theme{
     display: block;
@@ -1393,147 +1304,6 @@ footer .copyright .pro-links i{
     border-radius: 50%;
  }
 
-
- /* ----------------------------Project-inner------------------------------ */
-
-
-#course-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 8vw;
- }
-
- #course-inner  h3{
-    padding: 30px 0 30px 0;
-    color: var(--color-dark);
- }
-
-
- #course-inner  hr{
-    height: 1px;
-    background:var(--color-dark);
-    margin-top: 35px;
- }
-
-
-
- #course-inner .overwiew{
-    width: 70%;
- }
- 
- #course-inner .overwiew .course-img{
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 20px;
- }
-
- #course-inner .overwiew .course-head{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
- }
-
- #course-inner .overwiew .course-head .c-name{
-    width: 70%;
- }
-
- #course-inner .overwiew .course-head .c-name h2{
-    color:var(--color-dark);
- }
-
- #course-inner .overwiew .course-head .c-name .star{
-    margin-right: 6px 0;
- }
-
- #course-inner .overwiew .course-head .c-name .star i{
-    color: var(--color-primary);
-    font-size: 1rem;
- }
-
- #course-inner .overwiew .course-head .c-name p{
-    font-size: 15px;
- }
-
- #course-inner .overwiew .course-head span{
-    padding: 16px 22px;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: 700;
-    background: var(--color-primary)
- }
-
- #course-inner .learn p{
-    font-size: 15px;
-    padding-bottom: 15px;
- }
-
- #course-inner .learn i{
-    color:var(--color-primary);
-    font-weight: 700;
-    margin-right: 20px;
- }
-
- #course-inner .tutor{
-    display: flex;
-    /* flex-direction: column; */
- }
- 
- #course-inner .tutor img{
-    width:  70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-right: 20px;
- }
-
- #course-inner .tutor h5{
-    font-size: 17px;
- }
-
- #course-inner .tutor p{
-    color:var(--color-primary);
- }
- 
-#course-inner .enroll{
-   width: 300px;
-   padding: 0 30px 30px 30px;
-   border-radius: 11px;
-   box-shadow: 0 20px 40px 0 rgb(11 2 55/8%); 
-}
-
-#course-inner .enroll h3{
-    padding-bottom:10px;
-    padding-top: 5px;
-}
-
-#course-inner .enroll p{
-    font-size: 16px;
-    margin: 15px 0;
-}
-
-#course-inner .enroll i{
-    color:var(--color-primary);
-    font-weight: 520;
-    margin-right: 18px;
-    width: 18px;
-    height: 18px;
-    line-height: 25px;
-    text-align: center;
-}
-
-#course-inner #demo{
-background-color:green;
-color: var(--color-dark);
-font-weight:var(--font-semi-bold);
-}
-
-#course-inner #others{
-    background-color: hsl(252, 30%, 17%);
-    color: whitesmoke;
-    font-weight: var(--font-semi-bold);
-}
 
  /* --------------------------------MEdia Queries--------------------------- */
  @media only screen and (max-width:1200px){
@@ -1709,28 +1479,6 @@ font-weight:var(--font-semi-bold);
     .customize-theme .card{
         width: 75vw;
     }
-
-      /* -------------------------------Project inner------------------------------- */
-      #course-inner{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 8vw 4vw;
-     }
-  
-     #course-inner .overwiew{
-        width: 100%;
-     }
-  
-     #course-inner .overwiew .course-img{
-        height: 100%;
-        width: 100%;
-     }
-  
-     #course-inner .enroll{
-        margin-top: 25px;
-     }
 
  }
 
